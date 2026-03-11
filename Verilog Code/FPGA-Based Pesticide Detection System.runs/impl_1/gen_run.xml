@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-3" LaunchTime="1771835871">
+  <File Type="PA-TCL" Name="top_nexys4.tcl"/>
+  <File Type="REPORTS-TCL" Name="top_nexys4_reports.tcl"/>
+  <File Type="INIT-TIMING" Name="top_nexys4_timing_summary_init.rpt"/>
+  <File Type="OPT-DCP" Name="top_nexys4_opt.dcp"/>
+  <File Type="OPT-DRC" Name="top_nexys4_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="top_nexys4_methodology_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="top_nexys4.hwdef"/>
+  <File Type="OPT-TIMING" Name="top_nexys4_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="top_nexys4_rqa_opted.pb"/>
+  <File Type="PWROPT-DCP" Name="top_nexys4_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="top_nexys4_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="top_nexys4_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="top_nexys4_placed.dcp"/>
+  <File Type="PLACE-IO" Name="top_nexys4_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="top_nexys4_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="top_nexys4_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="top_nexys4_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="top_nexys4_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="top_nexys4_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="top_nexys4_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="top_nexys4_timing_summary_placed.rpt"/>
+  <File Type="PLACE-RQA-PB" Name="top_nexys4_rqa_placed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="top_nexys4_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="top_nexys4_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="top_nexys4_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="top_nexys4_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="top_nexys4_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="top_nexys4_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="top_nexys4_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="top_nexys4_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="top_nexys4_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="top_nexys4_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="top_nexys4_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="top_nexys4_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="top_nexys4_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="top_nexys4_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="top_nexys4_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="top_nexys4_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="top_nexys4_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="top_nexys4_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="top_nexys4_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="top_nexys4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="top_nexys4_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="top_nexys4_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="top_nexys4_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="top_nexys4_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="top_nexys4_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="top_nexys4_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="top_nexys4_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="top_nexys4_rqs_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="top_nexys4_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="top_nexys4_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="top_nexys4_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="top_nexys4_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="top_nexys4_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="top_nexys4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="top_nexys4_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="top_nexys4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="top_nexys4.bit"/>
+  <File Type="BG-BIN" Name="top_nexys4.bin"/>
+  <File Type="BITSTR-MSK" Name="top_nexys4.msk"/>
+  <File Type="BITSTR-RBT" Name="top_nexys4.rbt"/>
+  <File Type="BITSTR-NKY" Name="top_nexys4.nky"/>
+  <File Type="BITSTR-BMM" Name="top_nexys4_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="top_nexys4.mmi"/>
+  <File Type="PDI-FILE" Name="top_nexys4.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="top_nexys4_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="top_nexys4_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="top_nexys4.rcfi"/>
+  <File Type="CFI_FILE" Name="top_nexys4.cfi"/>
+  <File Type="RNPI_FILE" Name="top_nexys4.rnpi"/>
+  <File Type="NPI_FILE" Name="top_nexys4.npi"/>
+  <File Type="RBD_FILE" Name="top_nexys4.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="top_nexys4.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="top_nexys4.sysdef"/>
+  <File Type="BG-BGN" Name="top_nexys4.bgn"/>
+  <File Type="BG-DRC" Name="top_nexys4.drc"/>
+  <File Type="RDI-RDI" Name="top_nexys4.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="top_nexys4_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="top_nexys4_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/Design Sources/bram_feature_loader.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design Sources/feature_bram.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design Sources/seven_seg_controller.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design Sources/svm_pesticide_detector.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design Sources/top_nexys4.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_weights_f3.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage3_weights_f4.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_weights_f1.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage3_weights_f2.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage3_bias.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage3_class_labels.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_weights_f2.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage1_weights.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_bias.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_weights_f4.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/feature_bram_init.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage3_weights_f1.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage2_weights_f5.hex"/>
+    <File Path="$PPRDIR/Design Sources/mem/stage1_bias.hex"/>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="top_nexys4"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/Constraint File/nexys4.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/top_nexys4.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

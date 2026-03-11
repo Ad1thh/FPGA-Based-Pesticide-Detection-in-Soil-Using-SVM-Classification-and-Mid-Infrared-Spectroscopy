@@ -1,0 +1,451 @@
+
+*** Running vivado
+    with args -log top_nexys4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_nexys4.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Feb 23 14:07:57 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source top_nexys4.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/FPGA-Based Pesticide Detection System.srcs/utils_1/imports/synth_1/top_nexys4.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/FPGA-Based Pesticide Detection System.srcs/utils_1/imports/synth_1/top_nexys4.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_nexys4 -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24192
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 971.582 ; gain = 470.598
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'bram_mode' is used before its declaration [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/top_nexys4.v:121]
+INFO: [Synth 8-6157] synthesizing module 'top_nexys4' [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/top_nexys4.v:59]
+INFO: [Synth 8-6157] synthesizing module 'feature_bram' [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/feature_bram.v:38]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter MEM_DEPTH bound to: 512 - type: integer 
+	Parameter INIT_FILE bound to: feature_bram_init.hex - type: string 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'feature_bram_init.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/feature_bram.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'feature_bram' (0#1) [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/feature_bram.v:38]
+INFO: [Synth 8-6157] synthesizing module 'bram_feature_loader' [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/bram_feature_loader.v:28]
+	Parameter N_FEATURES_S1 bound to: 19 - type: integer 
+	Parameter N_FEATURES_S2 bound to: 35 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 9 - type: integer 
+	Parameter SAMPLE_STRIDE bound to: 64 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/bram_feature_loader.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'bram_feature_loader' (0#1) [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/bram_feature_loader.v:28]
+INFO: [Synth 8-6157] synthesizing module 'svm_pesticide_detector' [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:34]
+	Parameter N_FEATURES_S1 bound to: 19 - type: integer 
+	Parameter N_FEATURES_S2 bound to: 35 - type: integer 
+	Parameter N_FEATURES_S3 bound to: 54 - type: integer 
+	Parameter N_FAMILIES bound to: 5 - type: integer 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter FRAC_BITS bound to: 16 - type: integer 
+	Parameter ACCUM_WIDTH bound to: 64 - type: integer 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage1_weights.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:129]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage1_bias.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:130]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_weights_f1.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:131]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_weights_f2.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:132]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_weights_f3.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:133]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_weights_f4.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:134]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_weights_f5.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:135]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage2_bias.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:136]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage3_weights_f1.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:137]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage3_weights_f2.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:138]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage3_weights_f4.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:139]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage3_bias.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:140]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'stage3_class_labels.hex'; please make sure the file is added to project and has read permission, ignoring [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:141]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:194]
+INFO: [Synth 8-6155] done synthesizing module 'svm_pesticide_detector' (0#1) [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:34]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_controller' [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/seven_seg_controller.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_controller' (0#1) [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/seven_seg_controller.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'top_nexys4' (0#1) [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/top_nexys4.v:59]
+WARNING: [Synth 8-6014] Unused sequential element s1_product_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:227]
+WARNING: [Synth 8-6014] Unused sequential element s2_product1_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:264]
+WARNING: [Synth 8-6014] Unused sequential element s2_product2_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:265]
+WARNING: [Synth 8-6014] Unused sequential element s2_product3_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:266]
+WARNING: [Synth 8-6014] Unused sequential element s2_product4_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:267]
+WARNING: [Synth 8-6014] Unused sequential element s2_product5_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:268]
+WARNING: [Synth 8-6014] Unused sequential element s3_product_reg was removed.  [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:327]
+WARNING: [Synth 8-3848] Net s1_bias_rom[0] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:81]
+WARNING: [Synth 8-3848] Net s1_weights in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:80]
+WARNING: [Synth 8-3848] Net s2_bias_rom[4] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:90]
+WARNING: [Synth 8-3848] Net s2_weights_f5 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:89]
+WARNING: [Synth 8-3848] Net s2_bias_rom[0] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:90]
+WARNING: [Synth 8-3848] Net s2_weights_f1 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:85]
+WARNING: [Synth 8-3848] Net s2_bias_rom[1] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:90]
+WARNING: [Synth 8-3848] Net s2_weights_f2 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:86]
+WARNING: [Synth 8-3848] Net s2_bias_rom[2] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:90]
+WARNING: [Synth 8-3848] Net s2_weights_f3 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:87]
+WARNING: [Synth 8-3848] Net s2_bias_rom[3] in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:90]
+WARNING: [Synth 8-3848] Net s2_weights_f4 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:88]
+WARNING: [Synth 8-3848] Net s3_class_labels in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:102]
+WARNING: [Synth 8-3848] Net s3_bias_rom in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:97]
+WARNING: [Synth 8-3848] Net s3_weights_f1 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:94]
+WARNING: [Synth 8-3848] Net s3_weights_f2 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:95]
+WARNING: [Synth 8-3848] Net s3_weights_f4 in module/entity svm_pesticide_detector does not have driver. [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Design Sources/svm_pesticide_detector.v:96]
+WARNING: [Synth 8-7129] Port family_id[2] in module seven_seg_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port family_id[1] in module seven_seg_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port family_id[0] in module seven_seg_controller is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module top_nexys4 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1084.523 ; gain = 583.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1084.523 ; gain = 583.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1084.523 ; gain = 583.539
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1084.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Constraint File/nexys4.xdc]
+Finished Parsing XDC File [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Constraint File/nexys4.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/Constraint File/nexys4.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_nexys4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_nexys4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1175.516 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1175.516 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1175.516 ; gain = 674.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1175.516 ; gain = 674.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1175.516 ; gain = 674.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'bram_feature_loader'
+WARNING: [Synth 8-6014] Unused sequential element s1_features_reg was removed. 
+WARNING: [Synth 8-6014] Unused sequential element s2_features_reg was removed. 
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'svm_pesticide_detector'
+INFO: [Synth 8-802] inferred FSM for state register 'dm_state_reg' in module 'top_nexys4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 LS_IDLE |                             0000 |                             0000
+            LS_RESET_SVM |                             0001 |                             0001
+           LS_RESET_DONE |                             0010 |                             0010
+              LS_PREP_S1 |                             0011 |                             0011
+              LS_READ_S1 |                             0100 |                             0100
+              LS_LOAD_S1 |                             0101 |                             0101
+             LS_START_S1 |                             0110 |                             0110
+              LS_WAIT_S1 |                             0111 |                             0111
+              LS_PREP_S2 |                             1000 |                             1000
+              LS_READ_S2 |                             1001 |                             1001
+              LS_LOAD_S2 |                             1010 |                             1010
+             LS_START_S2 |                             1011 |                             1011
+          LS_WAIT_RESULT |                             1100 |                             1100
+                 LS_DONE |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'bram_feature_loader'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_IDLE |                             0000 |                             0000
+            S_COMPUTE_S2 |                             0001 |                             0100
+              S_CHECK_S2 |                             0010 |                             0101
+                  iSTATE |                             0011 |                             1001
+            S_COMPUTE_S3 |                             0100 |                             0110
+              S_CHECK_S3 |                             0101 |                             0111
+            S_COMPUTE_S1 |                             0110 |                             0001
+              S_CHECK_S1 |                             0111 |                             0010
+               S_DONE_S1 |                             1000 |                             0011
+                S_REPORT |                             1001 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'svm_pesticide_detector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 DM_IDLE |                              000 |                              000
+              DM_LOAD_S1 |                              001 |                              001
+             DM_START_S1 |                              010 |                              010
+              DM_WAIT_S1 |                              011 |                              011
+              DM_LOAD_S2 |                              100 |                              100
+             DM_START_S2 |                              101 |                              101
+              DM_WAIT_S2 |                              110 |                              110
+                 DM_DONE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'dm_state_reg' using encoding 'sequential' in module 'top_nexys4'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1175.516 ; gain = 674.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 6     
+	   2 Input   20 Bit       Adders := 1     
+	   4 Input    9 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 3     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               32 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 8     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---RAMs : 
+	              16K Bit	(512 X 32 bit)          RAMs := 1     
++---Muxes : 
+	  10 Input   64 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 3     
+	   4 Input   19 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	  14 Input    7 Bit        Muxes := 1     
+	  14 Input    6 Bit        Muxes := 2     
+	  10 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 3     
+	   8 Input    6 Bit        Muxes := 1     
+	  14 Input    5 Bit        Muxes := 1     
+	  14 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 6     
+	  10 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	  10 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	  14 Input    1 Bit        Muxes := 10    
+	  10 Input    1 Bit        Muxes := 13    
+	   2 Input    1 Bit        Muxes := 13    
+	   8 Input    1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port feature_valid in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[31] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[30] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[29] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[28] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[27] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[26] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[25] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[24] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[23] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[22] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[21] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[20] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[19] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[18] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[17] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[16] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[15] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[14] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[13] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[12] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[11] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[10] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[9] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[8] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[7] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[6] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[5] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[4] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[3] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[2] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[1] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_data[0] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[5] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[4] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[3] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[2] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[1] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_index[0] in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port feature_stage in module svm_pesticide_detector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[13] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[12] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[11] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[10] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[9] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[8] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[7] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[6] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[5] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[4] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module top_nexys4 is either unconnected or has no load
+WARNING: [Synth 8-7257] Removed RAM (mem_reg) due to inactive write enable.
+WARNING: [Synth 8-6014] Unused sequential element mem_reg was removed. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1175.516 ; gain = 674.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 1282.883 ; gain = 781.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1317.211 ; gain = 816.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 1317.211 ; gain = 816.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    24|
+|3     |LUT1   |     4|
+|4     |LUT2   |     9|
+|5     |LUT3   |    20|
+|6     |LUT4   |    51|
+|7     |LUT5   |    44|
+|8     |LUT6   |    51|
+|9     |MUXF7  |     8|
+|10    |FDCE   |   135|
+|11    |FDPE   |    22|
+|12    |FDRE   |    21|
+|13    |IBUF   |     8|
+|14    |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 56 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:40 . Memory (MB): peak = 1511.609 ; gain = 919.633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1511.609 ; gain = 1010.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1520.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1524.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 9184e01f
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 95 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:52 . Memory (MB): peak = 1524.496 ; gain = 1231.301
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1524.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hp/Downloads/FPGA-Based Pesticide Detection in Soil using SVM Classification and Mid-Infrared Spectroscopy/Verilog Code/FPGA-Based Pesticide Detection System.runs/synth_1/top_nexys4.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_nexys4_utilization_synth.rpt -pb top_nexys4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 23 14:08:53 2026...
